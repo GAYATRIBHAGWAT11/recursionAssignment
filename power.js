@@ -1,12 +1,8 @@
 
-
-function power(base, exp){
-    if(exp==0){
-        return1;
-    }else{
-        let result=base;
-        result=result * power(base, exp-1)
-        return result;
-    }
-}
-power(2,2)
+function pow(x,n){
+        if(n==0)
+       return 1
+        else
+       return x*pow(x,n-1)
+      }
+      console.log(pow(2,0))
